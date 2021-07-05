@@ -1,3 +1,7 @@
+def addition(a, b):
+    return a + b
+
+
 class Calculator:
     result = 0
 
@@ -7,6 +11,6 @@ class Calculator:
         pass
 
     @staticmethod
-    def add(a, b):
-        c = a + b
-        return c
+    def add(self, a, b):
+        self.result = a + b
+        return addition(a, b)
