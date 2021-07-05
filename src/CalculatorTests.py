@@ -4,6 +4,9 @@ from Calculator import Calculator
 
 class MyTestCase(unittest.TestCase):
 
+    def setUp(self) -> None:
+        self.calculator = self.calculator()
+
     def test_instantiate_calculator(self):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
