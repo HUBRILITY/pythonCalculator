@@ -10,7 +10,6 @@ class Calculator:
         self.result = x
         pass
 
-    @staticmethod
     def add(self, a, b):
         self.result = a + b
         return addition(a, b)
