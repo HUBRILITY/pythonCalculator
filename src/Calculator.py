@@ -9,8 +9,6 @@ def subtraction(a, b):
     return c
 
 
-
-
 class Calculator:
     result = 0
 
