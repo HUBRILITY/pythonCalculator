@@ -1,5 +1,5 @@
-def addition(a, b):
-    return float(a) + float(b)
+from Addition import addition
+from Subtraction import subtraction
 
 
 def subtraction(a, b):
@@ -7,6 +7,8 @@ def subtraction(a, b):
     b = float(b)
     c = b - a
     return c
+
+
 
 
 class Calculator:
