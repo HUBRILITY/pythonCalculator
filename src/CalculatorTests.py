@@ -14,8 +14,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEquals(self.calculator.result, 0)
 
     def test_add_method_calculator(self):
-        self.assertEqual(self.calculator.add(2, 2), 4)
-        self.assertEqual(self.calculator.result, 4)
+        test_data = CsvReader('/src/Addition.csv').data
+        pprint(test_data)
+        for row in test_data:
+            self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), float(row['Result'])
 
     def test_subtract_method_calculator(self):
         self.assertEqual(self.calculator.subtract(2, 2), 0)
