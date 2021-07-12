@@ -28,7 +28,7 @@ class Calculator:
         self.result = division(a, b)
         return self.result
 
-    def square(self, a):
+    def square(self, a) -> object:
         self.result = square(a)
         return self.result
 
