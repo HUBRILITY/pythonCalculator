@@ -13,15 +13,18 @@ class MyTestCase(unittest.TestCase):
     def test_results_property_calculator(self):
         self.assertEquals(self.calculator.result, 0)
 
-    def test_add_method_calculator(self):
-        test_data = CsvReader('/src/Addition.csv').data
-        pprint(test_data)
+    def test_addition(self):
+        test_data = CsvReader('Tests/Data/Addition.csv').data
         for row in test_data:
             self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), float(row['Result'])
 
-    def test_subtract_method_calculator(self) -> object:
-        self.assertEqual(self.calculator.subtract(2, 2), 0)
-        self.assertEqual(self.calculator.result, 0)
+    def test_subtraction(self):
+        test_data = CsvReader('Tests/Data/Subtraction.csv').data
+        for row in test_data:
+        result = float(row['Result'])
+        self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
+        self.assertEqual(self.calculator.result, result)
+
 
 
 if __name__ != '__main__':
