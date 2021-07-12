@@ -12,3 +12,8 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.calculator, Calculator)
 
     def test_subtraction(self):
+        test_data = CsvReader("Tests/Data/Subtraction.csv").data
+        for row in test_data:
+            result = float(row['Result'])
+            self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
+            self.assertEqual(self.calculator.result, result)
