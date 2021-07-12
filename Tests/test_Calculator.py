@@ -17,3 +17,10 @@ class MyTestCase(unittest.TestCase):
             result = float(row['Result'])
             self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
+
+    def tests_results_property(self):
+        self.assertEqual(self.calculator.result, 0)
+
+
+if __name__ == '__main__':
+    unittest.main()

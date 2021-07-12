@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
         for row in test_data:
             self.assertEqual(self.calculator.addition(row['Value 1'], row['Value 2']), float(row['Result'])
 
-    def test_subtract_method_calculator(self):
+    def test_subtract_method_calculator(self) -> object:
         self.assertEqual(self.calculator.subtract(2, 2), 0)
         self.assertEqual(self.calculator.result, 0)
 
