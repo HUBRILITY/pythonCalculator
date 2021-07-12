@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.calculator = self.calculator()
 
     def test_instantiate_calculator(self):
-        self.assertIsInstance(self.calculator, Calculator)
+        self.assertIsInstance(self.calculator, Calculator.Calculator)
 
     def test_results_property_calculator(self):
         self.assertEquals(self.calculator.result, 0)
