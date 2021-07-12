@@ -1,5 +1,5 @@
 import unittest
-from Calculator.Calculator import Calculator
+from src.Calculator.Calculator import Calculator
 
 
 class MyTestCase(unittest.TestCase):
@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
     def test_subtraction(self):
         test_data = CsvReader('Tests/Data/Subtraction.csv').data
         for row in test_data:
-                result = float(row['Result'])
+            result = float(row['Result'])
         self.assertEqual(self.calculator.subtract(row['Value 1'], row['Value 2']), result)
         self.assertEqual(self.calculator.result, result)
 
