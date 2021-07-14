@@ -21,4 +21,7 @@ Statistical Operations w/ Automated Unit Testing:
 5. Standard Deviation
 
 Random Number Generator:
+1. random number w/o seed b/w a range of two numbers
+2. with seed b/w range of two numbers
+3. Generate list of N random numbers w/ seed
 
