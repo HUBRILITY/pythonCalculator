@@ -2,7 +2,7 @@ from Calculator.Addition import addition
 from Calculator.Division import division
 
 
-def mean(data):
+def sample_mean(data, sample_size):
     num_values = len(data)
     total = 0
     for num in data:
