@@ -15,7 +15,7 @@ class Statistics(Calculator):
         self.result = mean(self.datab)
         return self.result
 
-    def sample_mean(self, sample_size):
+    def sampleMean(self, sample_size):
         self.result = sample_mean(self.data, sample_size)
         return self.result
 

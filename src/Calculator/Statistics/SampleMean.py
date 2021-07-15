@@ -1,11 +1,17 @@
 from Calculator.Addition import addition
 from Calculator.Division import division
+from Calculator.Statistics.GetSample import getSample
 
 
 def sample_mean(data, sample_size):
-    num_values = len(data)
     total = 0
-    random_values = random.choice(data, k=sample_size-1))
-    for num in random_values:
+
+    # check that get sample returns proper number of samples
+    # check that sample size is not 0
+    # check that sample size is not larger than population
+
+    sample = getSample(data, sample_size)
+    num_values = len(sample)
+    for num in sample:
         total = addition(total, num)
     return division(total, num_values)
