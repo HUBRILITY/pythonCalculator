@@ -1,11 +1,12 @@
 import unittest
-from CsvReader.CsvReader import CsvReader, ClassFactory
+
+from src.CsvReader.CsvReader import CsvReader, ClassFactory
 
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.csv_reader = CsvReader('src/Tests/Data/Addition.csv')
+        self.csv_reader = CsvReader('src/Tests/Data/employee_data.txt')
 
     def test_return_data_as_objects(self):
         people = self.csv_reader.return_data_as_objects('person')
