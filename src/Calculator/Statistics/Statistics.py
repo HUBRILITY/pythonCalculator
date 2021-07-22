@@ -3,7 +3,7 @@ from Calculator.Statistics.Mean import mean
 from Calculator.Statistics.SampleMean import sample_mean
 from Calculator.Statistics.Median import median
 from Calculator.Statistics.Mode import mode
-from Calculator.Statistics.StandardDeviation import standard_dev
+from Calculator.Statistics.StandardDeviation import standard_deviation
 from Calculator.Statistics.Variance import variance
 from CsvReader.CsvReader import CsvReader
 
@@ -28,8 +28,8 @@ class Statistics(Calculator):
     def mode(self):
         mode(self.data)
 
-    def standard_dev(self):
-        standard_dev(self.data)
+    def standard_deviation(self):
+        standard_deviation(self.data)
 
     def variance(self):
         variance(self.data)
