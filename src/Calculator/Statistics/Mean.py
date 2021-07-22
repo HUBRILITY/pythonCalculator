@@ -1,5 +1,5 @@
-from src.Calculator.Addition import addition
-from src.Calculator.Division import division
+from Calculator.Addition import addition
+from Calculator.Division import division
 
 
 def mean(data):
