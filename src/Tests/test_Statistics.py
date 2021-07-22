@@ -12,9 +12,9 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_method(self):
-        test_data = CsvReader("src/Tests/Data/Addition.csv").data
+        test_data = CsvReader("src/Tests/Data/sampleStatisticsData.csv").data
         for row in test_data:
-            result = float(row['Result'])
+            result = (row['Result'])
             self.assertEqual(self.calculator.add(row['Value 1'], row['Value 2']), result)
             self.assertEqual(self.calculator.result, result)
 
