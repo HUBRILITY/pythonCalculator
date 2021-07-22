@@ -25,3 +25,7 @@ Random Number Generator:
 2. with seed b/w range of two numbers
 3. Generate list of N random numbers w/ seed
 
+Resources:  
+
+generatedata.com
+
