@@ -4,7 +4,6 @@ from Calculator.Multiplication import multiplication
 from Calculator.Division import division
 from Calculator.Square import square
 from Calculator.SquareRoot import squareRoot
-from Statistics.Mean import mean
 
 
 class Calculator:
@@ -36,9 +35,3 @@ class Calculator:
     def squareRoot(self, a):
         self.result = squareRoot(a)
         return self.result
-
-
-class Statistics(Calculator):
-
-    def mean(self):
-        mean(self.data)

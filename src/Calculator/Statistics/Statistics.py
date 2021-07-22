@@ -12,12 +12,11 @@ class Statistics(Calculator):
     data = []
 
     def __init__(self, filepath):
-        self.data = CsvReader(filepath)
         super().__init__()
+        self.data = CsvReader(filepath)
 
     def mean(self):
-        self.result = mean(self.data)
-        return self.result
+        mean(self.data)
 
     def sampleMean(self, sample_size):
         self.result = sample_mean(self.data, sample_size)
